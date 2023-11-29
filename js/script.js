@@ -16,7 +16,7 @@ $(document).ready(function () {
   
      //main slider owl
      $(".hero_carousel").owlCarousel({
-      loop:true,
+      loop:false,
       margin:10,
       dots:false,
       nav:true,
