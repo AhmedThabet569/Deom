@@ -1,0 +1,327 @@
+@media screen and (max-width: 1500px) {
+    // .hero_carousel
+    // {
+    //     .item 
+    //     {
+    //         .cover 
+    //         {
+    //             .header-content
+    //             {
+    //                 margin: 2rem 0;
+    //                 h1{
+    //                     font-size: 25px;
+    //                 }
+    //                 h4{
+    //                     font-size: 15px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        .navbar {
+            padding: 10px 0;
+            .navbar-nav {
+                padding-inline-start: 0;
+            }
+        }
+
+        .hamburger-menu {
+            display: inline-block;
+        }
+    }
+    section.clients {
+        .clients-content {
+            .clients-box {
+                height: auto;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    section.clients {
+        .clients-content {
+            .clients-box {
+                padding: 15px;
+                width: 50%
+            }
+        }
+    }
+    .hero_carousel 
+    {
+        .item 
+        {
+            .cover 
+            {
+                .header-content 
+                {
+                    text-align: center;
+                    h1
+                    {
+                        font-size: 18px;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+                    }
+                    h4{
+                        font-size: 12px;
+                        padding-bottom: 20px;
+                    }
+                  
+                }
+                .hero_button
+                {
+                    display: flex;
+                    a.btn-hero {
+                        font-size: 13px;
+                        padding: 9px;
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 670px) {
+    
+}
+
+@media screen and (max-width: 575px) {
+    header .navbar .navbar-brand img {
+        // max-width: 180px;
+    }
+    section.contact .content .contact-form {
+        padding: 50px 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+   
+}
+
+@media screen and (max-width: 767px ) and (min-width:360px) {
+ header{
+    .topheader{
+        flex-direction: column;
+        .lang{
+         padding: 0 0;
+         .list-lang{
+            align-items: center;
+             padding-inline-start: 0px;
+         }
+        }
+        .search
+        {
+            display: block;
+            width: 100%;
+            .buttons{
+                display: block;
+                .btn{
+                    width: 50%;
+                    display: inline-block;
+                }
+            }
+        }
+     }
+     .navbar 
+     {
+        .navbar-brand
+        {
+            img{
+                max-width: 220px;
+                height: 100%;
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+     }
+ }
+ .hero 
+ {
+    .social_hero
+    {
+        display: none;
+    }
+    .hero_carousel 
+    {
+        .item {
+            height: 80vh;
+            .cover 
+            {
+                .content {
+                     width: 100%; 
+                    margin: 0 auto;
+                    text-align: center;
+                    transform: translateY(25%);
+                    p{
+                        font-size: 13px;
+                    }
+                    .hero_button
+                    {
+                        justify-content: center;
+                    }
+                }
+            }
+         }
+     }
+    }
+    section.about 
+    {
+        .main-title {
+            margin: 30px 11px;
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+    .latest_news{
+        padding: 0px 0;
+    }
+    .lessons   {
+        padding: 0px 0;
+        .lesson_cards{
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        }
+    }
+    .testimonial_card
+    {
+        flex-direction: column;
+        figure{
+            width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: -60px;
+  position: relative;
+  margin: -90px auto 20px;
+        }
+        .test-name {
+            
+            font-size: 16px;
+        }
+        .testimonial_card .test-position {
+            
+            font-size: 12px;
+        }
+        p{
+            font-size: 13px;
+        }
+    }
+    .ads
+    {
+        .content 
+        {
+            .text {
+                padding: 1rem;
+            }
+        }
+    }
+    .program-tab
+    {
+        flex-direction: column;
+        align-items: inherit !important;
+        .tab-content 
+        {
+            .tab-pane-section 
+            {
+                margin: 3rem 10px;
+                .tab-header{
+                    text-align: center;
+                }
+                .tab-details
+                {
+                    grid-template-columns: repeat(auto-fit,minmax(360PX,1fr));
+                     gap: 0%;
+                }
+            }
+        }
+        .icon_link
+        {
+            min-height: 90px;
+        }
+        .content{
+            padding: 0px 10px;
+        }
+    }
+    .statstics 
+    {
+        .content
+        {
+            grid-template-columns: repeat(2,minmax(150px,1fr));
+    gap: 5%;
+    margin: 0rem 0 0;
+        }
+    }
+    .event-box
+    {
+        margin: 10px 0;
+    }
+    footer
+    {
+        .me-5{
+            margin-right: 0rem!important;
+        }
+        .footer-content 
+        {
+            .footer-box 
+            {
+                .about
+                {
+                    p {
+                        color: #2c6d7f;
+                        font-size: 14px;
+                        font-weight: normal;
+                        text-align: justify;
+                        padding: 10px 0;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+        .copyright .copy-text {
+           flex-direction: column;
+           text-align: center;
+        }
+    }
+    .lesson-card.lesson-hover {
+        position: relative;
+        min-height: 250px;
+        display: block;
+        .details{
+            p{
+                display: none;
+            }
+        }
+    }
+    .latest_news 
+    {
+        .news_carousel 
+        {
+            .item
+            {
+                min-height: 40vh;
+                .details
+                {
+                    position: absolute;
+                    bottom: 16%;
+                    z-index: 1;
+                    padding: 0 2rem;
+                    h3{
+                        font-size: medium;
+                    }
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

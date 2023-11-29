@@ -1,0 +1,89 @@
+//header
+header 
+    //navbar desktop
+    div(class="topheader")
+        div(class="lang")
+            span الثلاثاء 2 صفر 1445ه
+            ul(class="list-unstyled list-lang d-flex gap-2 mb-0")
+                li
+                    a(href="#!") اردو
+                li
+                    a(href="#!") france
+                li
+                    a(href="#!") English 
+                li
+                    a(href="#!") اللفة العربية 
+        div(class="search")
+            div(class="input-group flex-nowrap flex-row-reverse border-0")
+                span#addon-wrapping(class="input-group-text border-0")
+                    i(class="bi bi-search")
+                input(type="text" class="form-control border-0" placeholder="اكتب ما تبحث عنه" aria-label="Username" aria-describedby="addon-wrapping")
+            div(class="buttons")
+                a(class="btn btn-primary") تسجيل الدخول
+                a(class="btn btn-primary") تسجيل عضوية
+    nav(class="navbar main-nav navbar-expand-lg")
+        div(class="container-fluid")
+            a(class="navbar-brand", href="index.html") 
+                img(src="images/logo.png",   alt="قسورة")
+            button(class="navbar-toggler", type="button", data-bs-toggle="offcanvas", data-bs-target="#side_menu", aria-controls="side_menu", aria-expanded="false", aria-label="Toggle navigation")
+                div(class="hamburger-menu")
+                    span
+                    span
+                    span
+            div(class="collapse navbar-collapse me-5" id="navbarNav")
+                ul(class="navbar-nav")
+                    li(class="nav-item")
+                        a(class="nav-link active", aria-current="page", href="index.html") الرئيسية
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!") عن الجمعية
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!") اللوائح والسياسات
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!") المركز الاعلامي
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!") التقارير والانجازات 
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!")  الاخبار
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!")  متجز الجمعية
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!")  اتصل بنا
+                    //- li(class="nav-item dropdown")
+                    //-     a(class="nav-link dropdown-toggle", id="navbarDropdownMenuLink1" href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false")
+                    //-         | اللغة
+                    //-     ul(class="dropdown-menu", aria-labelledby="navbarDropdownMenuLink1")
+                    //-         //- li
+                    //-             a(class="dropdown-item") arabic
+                    //-         li
+                    //-             a(class="dropdown-item", href="https://qaswarahagency.com/en") الإنجليزية
+    //navbar desktop
+
+    //side menu in mobile only
+    div(class="offcanvas offcanvas-start", id="side_menu" data-bs-scroll="true", tabindex="-1", aria-labelledby="side_menu_label")
+        div(class="offcanvas-header")
+            button(type="button", class="btn-close btn-close-dark", data-bs-dismiss="offcanvas", data-bs-target="#side_menu", aria-controls="side_menu" aria-label="Close")
+        div(class="offcanvas-body")
+            div(class="navbar")
+                div(class="collapsed navbar-collapse" id="navbarNavSide")
+                    ul(class="navbar-nav")
+                        //- li(class="nav-item")
+                            a(class="nav-link active", aria-current="page", href="") Home
+                        ul(class="navbar-nav")
+                    li(class="nav-item")
+                        a(class="nav-link active", aria-current="page", href="index.html") الرئيسية
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!") عن الجمعية
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!") اللوائح والسياسات
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!") المركز الاعلامي
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!") التقارير والانجازات 
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!")  الاخبار
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!")  متجز الجمعية
+                    li(class="nav-item")
+                        a(class="nav-link", href="#!")  اتصل بنا
+    //side menu in mobile only
+//header
