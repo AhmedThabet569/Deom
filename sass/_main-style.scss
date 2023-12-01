@@ -7,6 +7,30 @@ a {
 	background-color: $main_color;
 	border-color: $main_color;
 }
+.btn-primary
+{
+	background-color: $main_color;
+	color:#fff !important;
+	border-color: transparent;
+	border-radius: 30px;
+	padding: 0.7rem;
+	@include transition(all 0.5s ease-in-out);
+	&:hover{
+		background-color: $second_color;
+	}
+}
+.btn-secondary
+{
+	border-color: transparent;
+	background-color: $second_color;
+	color:#fff !important;
+	border-radius: 30px;
+	padding: 0.7rem;
+	@include transition(all 0.5s ease-in-out);
+	&:hover{
+		background-color: $main_color;
+	}
+}
 .btn-outline{
 	border-color: $main_color;
 	background-color: #fff;
@@ -17,7 +41,35 @@ a {
 	font-weight: 500;
 	padding: 10px 40px;
 }
-
+.news-box
+{
+	display: flex;
+	align-items: baseline;
+	gap: 3%;
+	.image{
+		img{
+			@extend %fitimage;
+		}
+	}
+}
+.rule-tab
+{
+	padding: 1rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+	.buttons
+	{
+		.btn{
+		    margin: 0px 10px 0 0;
+    font-size: 13px;
+		}
+	}
+	.content
+	{
+		margin-right: 10px !important;
+		
+	}
+}
 .main-title {
 	margin-bottom: 5rem;
 
@@ -226,7 +278,7 @@ header {
 	.navbar {
 		background-color: #fff;
 		@include transition(all ease 0.1s);
-		position: fixed;
+	 
 		width: 100%;
 		z-index: 99;
 		padding: 0;
@@ -1266,27 +1318,41 @@ overflow: hidden;
 filter: drop-shadow(0 0 7.5px rgba(0,0,0,0.22));
 background-color: #ffffff;
 
-	&:hover {
-		.text {
-			background-color: $main_color;
 
-			// &::after {
-			// 	top: 0;
-			// 	left: 0;
-			// 	z-index: -1;
-			// }
-
-			.subtitle,
-			.details {
-				color: #fff;
-			}
-			.date{
-				i,p{
-					color: #fff;
-				}
+&.download-box
+{
+	margin-bottom: 15px;
+	.text{
+		display: flex;
+		justify-content: space-between;
+		.date
+		{
+			p,i{
+				font-size: 14px;
+				color: $main_color;
 			}
 		}
 	}
+	.desc{
+		padding:0 1rem;
+		color: #555759;
+		font-size: 12px;
+	}
+
+
+}
+.buttons{
+	margin: 0 auto 15px;
+	text-align: center;
+	.btn {
+		padding: 0.5rem 2.6rem;
+		font-size: 15px;
+		i {
+			font-size: 15px;
+			 padding: 0 10px;
+		}
+	}
+}
 
 	.text {
 		padding: 1.6rem;
@@ -1360,6 +1426,7 @@ background-color: #ffffff;
 		// 	box-shadow: none;
 		// }
 	}
+	
 }
 .events
 {

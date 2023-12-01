@@ -325,4 +325,107 @@
             }
         }
     }
+    .news-box,.rule-box{
+        display: block !important;
+        
+        .image{
+            margin-bottom: 10px;
+        }
+    }
+    .single-news 
+    {
+        .image
+        {
+            height: 100%;
+        }
+    }
+    .page_section
+    {
+        .main_content
+        {
+            padding: 1rem;
+        }
+    }
+    .contact-card
+    {
+        flex-direction: column;
+        gap: 2%;
+        .content 
+        {
+            h5{
+                font-size: 13px;
+            }
+            h5.email
+            {
+                letter-spacing: 4px;
+            }
+           img {
+                width: 35px;
+            }
+        }
+    }
+    .contact-form 
+    {
+        padding: 1rem !important;
+        .image
+        {
+                padding: 1rem 0;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+        .contact-way 
+        {
+            h5 {
+                font-size: 14px;
+    
+            }
+            p {
+                font-size: 11px;
+            }
+        }
+        .social-media{
+            margin-top: 1rem !important;
+            ul 
+            {
+                li 
+                {
+                    a 
+                    {
+                        i {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .page_section{
+        .program-box{
+            flex-direction: row;
+            margin: 4px;
+            &.rule-tab{
+                
+                    flex-direction: column;
+                    justify-content: center;
+                
+            }
+        }
+        .lesson_cards
+        {
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap: 2%;
+            .lesson-card
+            {
+                min-height: unset;
+
+            }
+        }
+    }
+    .event-info
+    {
+        flex-direction: column;
+    }
 }
